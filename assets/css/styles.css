@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* style guide for color */
+:root {
+  --light: #eeeeeed0;
+  --grey: #141414ee;
+  --yellow: #fce138;
+  --red: rgb(211, 15, 15);
+  --blue: #024e76;
+}
+
+body {
+    color: #141414ee;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+  padding: 20px 35px;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--light);
+  display: inline-block;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #eeeeeef6;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: bold;
+  font-size: 1.55vw;
+  text-decoration: underline;
+}
+
+
+/* HERO Style */
+.hero {
+  background-image: url('../images/computer-coding.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 600px;
+}
+
+.intro {
+  background: rgba(34,34,34,0.75);
+  top: 25%;
+  left: 25%;
+  padding: 50px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  border: 3px solid var(--light);
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* SECTION TITLE Style */
+.section-title {
+  font-size: 35px;
+  color: var(--grey);
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 18px auto 20px auto;
+  width: 25%;
+}
+
+
+/* ABOUT ME Style */
+.about-me p {
+  line-height: 1.7;
+  width: 80%;
+  margin: 8px auto;
+  font-size: 20px;
+  text-align: left;  
+}
+
+
+ /* WORK Style */
+.work-grid-container {
+  max-width: 940px;
+  height: 700px;
+  margin: 8px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: dense;
+}
+
+.work-grid-item {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--grey);
+  font-size: 30px;
+}
+
+.run-buddy {
+  background-image: url('../images/run-buddy.jpg');
+  background-size: cover;
+  grid-column: 1 / span 2;
+  grid-row: 1 / 1;
+  color: var(--yellow);
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.horiseon {
+  background-image: url('../images/horiseon.jpg');
+  background-size: cover;
+  color: var(--blue);
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.more-to-come {
+  background-image: url('../images/placeholder.jpg');
+  background-size: cover;
+  Grid-column: 2;
+  grid-row: 2;
+}
+
+
+
+/* CONTACT Style */
+.contact p {
+  line-height: 1.7;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  margin: 8px auto;
+}
+
+
+/* RESUME Content */
+.resume-content {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--blue)
+}
+
+.resume-content h3 {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.resume-content p {
+  color: var(--blue);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.resume-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+}
+
+.experience-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.skills {
+  margin-bottom: 25px;
+}
+
+.skills-grid-item {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+/* UTILITIES */
+.flex-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* FOOTER Style */
+footer {
+  background: var(--grey);
+  width: 100%;
+  padding: 40px 35px;
+  border-top: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2{
+  color: var(--light);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer span {
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: right;
+  font-weight: bold;
+  color: var(--red);
+}
+
+footer a {
+  font-weight: bold;
+  color: var(--yellow);
+}
