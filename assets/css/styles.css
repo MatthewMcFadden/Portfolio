@@ -102,6 +102,22 @@ header nav ul li a {
 .about-me img {
   width: 80%;
   height: auto;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-property: width;
+  -moz-transition-duration: 1.5s;
+  transition-property: width;
+  transition-duration: 1.5s;
+}
+
+.about-me img:hover {
+  width: 78.5%;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-property: width;
+  -moz-transition-duration: 1.5s;
+  transition-property: width;
+  transition-duration: 1.5s;
 }
 
 .about-me p {
@@ -129,7 +145,27 @@ header nav ul li a {
   flex-wrap: wrap;
   border: 1px solid var(--grey);
   font-size: 30px;
+  position: relative;
+  height: 350px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: height;
+  -moz-transition-duration: 1s;
+  transition-property: height;
+  transition-duration: 1s;
 }
+
+
+.work-grid-item:hover {
+  height: 385px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: height;
+  -moz-transition-duration: 1s;
+  transition-property: height;
+  transition-duration: 1s;
+}
+
 
 .run-buddy {
   background-image: url('../images/run-buddy.jpg');
@@ -155,7 +191,6 @@ header nav ul li a {
   Grid-column: 2;
   grid-row: 2;
 }
-
 
 
 /* CONTACT Style */
