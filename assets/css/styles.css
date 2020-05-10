@@ -199,8 +199,8 @@ header nav ul li a {
 
 .experience-grid-item {
   display: flex;
-  justify-content: center;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .skills {
