@@ -132,11 +132,11 @@ header nav ul li a {
  /* WORK Style */
 .work-grid-container {
   max-width: 940px;
-  height: 700px;
+  height: 1050px;
   margin: 8px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: dense;
 }
 
@@ -147,6 +147,8 @@ header nav ul li a {
   font-size: 30px;
   position: relative;
   height: 350px;
+  
+  /* hover animation effect */
   -webkit-transition-property: height;
   -webkit-transition-duration: 1s;
   -moz-transition-property: height;
@@ -155,8 +157,8 @@ header nav ul li a {
   transition-duration: 1s;
 }
 
-
 .work-grid-item:hover {
+  /* hover animation effect */
   height: 385px;
   -webkit-transition-property: height;
   -webkit-transition-duration: 1s;
@@ -185,11 +187,19 @@ header nav ul li a {
   grid-row: 2;
 }
 
-.more-to-come {
-  background-image: url('../images/placeholder.jpg');
+.just-breathe {
+  background-image: url('../images/just-breathe.png');
   background-size: cover;
-  Grid-column: 2;
+  color: var(--light);
+  grid-column: 2;
   grid-row: 2;
+}
+
+.more-to-come {
+  background-image: url('../images/more-to-come.jpg');
+  background-size: cover;
+  Grid-column: 1 / span 2;
+  grid-row: 3;
 }
 
 
