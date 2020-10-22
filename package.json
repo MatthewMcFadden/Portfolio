@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "## Description My personal portfolio of all of my compiled work aimed at landing a job as a web developer. I aim to update and improve this website as time goes on so it can showcase my growth and improvement in the web development field.",
+  "main": "index.js",
+  "dependencies": {
+    "framer-motion": "^2.6.13",
+    "missing": "0.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewMcFadden/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewMcFadden/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MatthewMcFadden/Portfolio#readme"
+}
